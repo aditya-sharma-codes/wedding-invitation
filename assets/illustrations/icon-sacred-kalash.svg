@@ -1,0 +1,31 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="kalashGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E4B8"/>
+      <stop offset="50%" stop-color="#C59A4E"/>
+      <stop offset="100%" stop-color="#8B6925"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Mango Leaves (Amra Pallav) in Olive Green -->
+  <path d="M24 8 C18 10 12 16 14 20 C18 20 22 14 24 8 Z" fill="#4A583A"/>
+  <path d="M24 8 C30 10 36 16 34 20 C30 20 26 14 24 8 Z" fill="#4A583A"/>
+  <path d="M24 4 C21 8 20 15 24 18 C28 15 27 8 24 4 Z" fill="#5A6D47"/>
+
+  <!-- Sacred Coconut (Shreefal) with Tilak -->
+  <circle cx="24" cy="15" r="5" fill="#8B5A2B" stroke="#5C381E" stroke-width="0.8"/>
+  <circle cx="24" cy="14" r="1.5" fill="#B22222"/>
+
+  <!-- Kalash Pot Rim -->
+  <rect x="15" y="19" width="18" height="4" rx="1.5" fill="url(#kalashGold)" stroke="#8B6925" stroke-width="0.8"/>
+  <!-- Sacred Red Thread (Mauli / Kalava) on Neck -->
+  <rect x="17" y="21" width="14" height="2" fill="#7A1A24"/>
+
+  <!-- Kalash Pot Belly -->
+  <path d="M15 23 C12 26 10 32 12 37 C14 41 20 42 24 42 C28 42 34 41 36 37 C38 32 36 26 33 23 Z" fill="url(#kalashGold)" stroke="#8B6925" stroke-width="1"/>
+  <!-- Sacred Swastik / Tilak Emblem on Pot Belly -->
+  <path d="M24 28 V36 M20 32 H28 M20 28 H24 M28 32 V28 M28 36 H24 M20 36 V32" stroke="#7A1A24" stroke-width="1.2" stroke-linecap="square"/>
+
+  <!-- Kalash Pedestal Base -->
+  <path d="M17 42 H31 V44 H17 Z" fill="url(#kalashGold)" stroke="#8B6925" stroke-width="0.8"/>
+</svg>

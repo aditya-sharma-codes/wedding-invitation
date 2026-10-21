@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <title>Himanshu Sharma Weds Anjani Sharma — Wedding Invitation | 30 November 2026</title>
+  
+  <!-- SEO & WhatsApp Preview Meta Tags -->
+  <meta name="description" content="Together with their families, Himanshu Sharma and Anjani Sharma invite you to celebrate their wedding on 30 November 2026. Explore the Wedding Programmes and celebrations.">
+  <meta name="theme-color" content="#FAF5EB">
+  
+  <meta property="og:title" content="Himanshu Sharma Weds Anjani Sharma — Wedding Invitation">
+  <meta property="og:description" content="Together with their families, Himanshu Sharma and Anjani Sharma invite you to celebrate their wedding on 30 November 2026. View the digital invitation.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Himanshu & Anjani Wedding">
+  
+  <!-- Google Fonts: Luxury Wedding Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+  
+  <!-- Favicon Monogram -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%236B1724'/><circle cx='50' cy='50' r='44' fill='none' stroke='%23C59B51' stroke-width='2'/><text x='50' y='59' font-family='Cinzel, serif' font-size='26' font-weight='600' fill='%23E5CCA0' text-anchor='middle' letter-spacing='1'>H &amp; A</text></svg>">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Preload Cinematic Couple Reveal Transition Asset -->
+  <link rel="preload" as="image" href="assets/illustrations/couple-reveal.png">
+
+  <noscript>
+    <style>
+      .opening-overlay { display: none !important; }
+      .couple-transition-overlay { display: none !important; }
+      body.locked { overflow: auto !important; height: auto !important; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+<body class="locked">
+
+  <!-- Background Audio (Off by default, user-triggered via wax seal or floating button) -->
+  <audio id="weddingAudio" src="assets/audio/wedding-music.mp3" loop preload="auto"></audio>
+
+  <!-- Ambient Texture & Particle Layers -->
+  <div class="ambient-grain" aria-hidden="true"></div>
+  <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+  <div class="petals-container" id="petalsContainer" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       OPENING SCREEN: Traditional Royal Indian Wedding Card (Digital Recreation)
+       ======================================================================== -->
+  <div class="opening-overlay" id="openingOverlay" role="dialog" aria-modal="true" aria-label="Anjani & Himanshu Wedding Invitation">
+    <div class="opening-vignette" aria-hidden="true"></div>
+    
+    <div class="royal-card-container" id="royalCardContainer">
+      <div class="royal-card-wrapper" id="royalCardWrapper">
+        <div class="royal-card-inner" id="royalCardInner">
+          
+          <!-- Royal Indian Wedding Card Artwork (Approved Square Visual Reference) -->
+          <img src="assets/card/wedding-card-square.jpg" alt="Anjani & Himanshu Wedding Invitation Card" class="royal-card-artwork" id="royalCardArtwork" loading="eager" fetchpriority="high">
+
+          <!-- Ambient Candlelight Flame Glows for the 4 Hanging Lanterns -->
+          <span class="candle-flame-glow left-outer" aria-hidden="true"></span>
+          <span class="candle-flame-glow left-inner" aria-hidden="true"></span>
+          <span class="candle-flame-glow right-inner" aria-hidden="true"></span>
+          <span class="candle-flame-glow right-outer" aria-hidden="true"></span>
+
+          <!-- Interactive Circular Maroon OPEN Button (Antique Wax-Seal Medallion) -->
+          <button type="button" class="royal-open-seal-btn" id="waxSealBtn" aria-label="Open Wedding Invitation">
+            <div class="open-seal-ambient-glow" aria-hidden="true"></div>
+            <img src="assets/card/layer-open-button.png" alt="" class="open-seal-img" loading="eager" fetchpriority="high">
+          </button>
+
+        </div>
+      </div>
+
+      <!-- Skip Button for quick entry / accessibility -->
+      <button type="button" class="opening-skip-btn traditional-skip" id="openingSkipBtn" data-i18n="openingSkip">Skip to Invitation</button>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       CINEMATIC COUPLE PROGRESSIVE SPATIAL CONTENT REVEAL
+       Layer 1: Real Interactive Home Page DOM (#weddingWebsiteWrapper)
+       Layer 2: True Spatial Mask Wipe (pure CSS mask-position, zero curtain element)
+       Layer 3: Independent Transparent Couple Foreground (floating cleanly above)
+       ======================================================================== -->
+  <div class="couple-transition-overlay" id="coupleTransitionOverlay" aria-hidden="true">
+    <div class="couple-foreground-track" id="coupleForegroundTrack">
+      <img src="assets/illustrations/couple-reveal.png" alt="" class="couple-pure-artwork" id="coupleRevealImg" loading="eager" decoding="async">
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       WEDDING WEBSITE WRAPPER (REAL INTERACTIVE DOM CONTENT)
+       ======================================================================== -->
+  <div class="wedding-website-wrapper" id="weddingWebsiteWrapper">
+
+  <!-- ========================================================================
+       FLOATING NAVIGATION & HEADER
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-pill" aria-label="Primary Navigation">
+      <a href="#hero" class="nav-brand">
+        <span class="monogram-initial">H</span><span class="amp">&</span><span class="monogram-initial">A</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link" data-i18n="navHome">Home</a></li>
+        <li><a href="#story" class="nav-link" data-i18n="navStory">Our Story</a></li>
+        <li><a href="#events" class="nav-link" data-i18n="navEvents">Programmes</a></li>
+        <li><a href="#countdown" class="nav-link" data-i18n="navCountdown">Countdown</a></li>
+        <li><a href="#wedding" class="nav-link" data-i18n="navWedding">Wedding Day</a></li>
+        <li><a href="#family" class="nav-link" data-i18n="navFamily">Family</a></li>
+      </ul>
+
+      <!-- Language Switcher Pill -->
+      <button type="button" class="lang-toggle-btn" id="langToggleBtn" aria-label="Switch Language (English / हिन्दी)">
+        <span class="lang-code en active">EN</span>
+        <span class="lang-sep">|</span>
+        <span class="lang-code hi">हि</span>
+      </button>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="nav-mobile-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Slide-In Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div class="mobile-drawer-sheet">
+      <ul class="mobile-drawer-links">
+        <li><a href="#hero" class="mobile-drawer-link" data-i18n="navHome">Home</a></li>
+        <li><a href="#story" class="mobile-drawer-link" data-i18n="navStory">Our Story</a></li>
+        <li><a href="#events" class="mobile-drawer-link" data-i18n="navEvents">Wedding Programmes</a></li>
+        <li><a href="#countdown" class="mobile-drawer-link" data-i18n="navCountdown">Countdown</a></li>
+        <li><a href="#wedding" class="mobile-drawer-link" data-i18n="navWedding">Wedding Day</a></li>
+        <li><a href="#family" class="mobile-drawer-link" data-i18n="navFamily">Family Blessings</a></li>
+      </ul>
+
+      <div class="mobile-drawer-footer">
+        <div class="mobile-drawer-names">HIMANSHU & ANJANI</div>
+        <div class="mobile-drawer-date">30 November 2026</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       FLOATING MUSIC CONTROLLER (Off by default)
+       ======================================================================== -->
+  <button type="button" class="music-toggle-btn" id="musicToggleBtn" aria-label="Play Background Music">
+    <span class="music-bars" aria-hidden="true">
+      <span class="music-bar"></span>
+      <span class="music-bar"></span>
+      <span class="music-bar"></span>
+    </span>
+    <span class="music-tooltip">Music: Off</span>
+  </button>
+
+  <!-- ========================================================================
+       1. HERO SECTION
+       ======================================================================== -->
+  <main id="mainContent">
+    <section class="hero-section" id="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <!-- Symmetrical Royal Floral Corner Assets (Uploaded Approved Artwork) -->
+      <div class="hero-botanical-flank left" aria-hidden="true">
+        <img src="assets/illustrations/floral-corner-left-transparent.png" alt="" class="hero-botanical-img">
+      </div>
+      <div class="hero-botanical-flank right" aria-hidden="true">
+        <img src="assets/illustrations/floral-corner-right-transparent.png" alt="" class="hero-botanical-img">
+      </div>
+
+      <!-- Flanking Hanging Palace Lanterns (from Royal Suite) -->
+      <div class="hero-lantern-hanging left" aria-hidden="true">
+        <img src="assets/illustrations/royal-palace-lantern.png" alt="" class="hero-lantern-img">
+      </div>
+      <div class="hero-lantern-hanging right" aria-hidden="true">
+        <img src="assets/illustrations/royal-palace-lantern.png" alt="" class="hero-lantern-img">
+      </div>
+
+      <div class="hero-content">
+        <!-- Traditional Miniature-Art Floral Medallion Crest with Royal Monogram -->
+        <div class="hero-monogram-crest reveal">
+          <div class="mandala-medallion-wrapper">
+            <img src="assets/illustrations/royal-floral-mandala.png" alt="Himanshu & Anjani Crest" class="hero-card-medallion">
+            <span class="mandala-monogram-text" aria-hidden="true"><span class="monogram-initial">H</span><span class="mandala-amp">&</span><span class="monogram-initial">A</span></span>
+          </div>
+        </div>
+
+        <p class="hero-eyebrow reveal delay-1" data-i18n="heroEyebrow">Together with their families</p>
+
+        <!-- Main Names -->
+        <div class="hero-names-wrap">
+          <h1 class="hero-name reveal delay-1">HIMANSHU</h1>
+          <div class="hero-ampersand reveal delay-2">&</div>
+          <h1 class="hero-name reveal delay-2">ANJANI</h1>
+        </div>
+
+        <!-- Weds Badge Flanked by Royal Ceremonial Elephants -->
+        <div class="hero-elephants-flank reveal delay-3">
+          <img src="assets/illustrations/royal-ceremonial-elephant-right.png" alt="Royal Ceremonial Elephant Left" class="hero-flank-elephant left" aria-hidden="true">
+          <div class="hero-weds-badge">
+            <span class="hero-weds-line"></span>
+            <span class="hero-weds-text" data-i18n="heroWeds">WEDS</span>
+            <span class="hero-weds-line"></span>
+          </div>
+          <img src="assets/illustrations/royal-ceremonial-elephant-left.png" alt="Royal Ceremonial Elephant Right" class="hero-flank-elephant right" aria-hidden="true">
+        </div>
+
+        <!-- Date -->
+        <div class="hero-date-block reveal delay-3" data-i18n="heroDate">
+          30 NOVEMBER 2026 · MONDAY
+        </div>
+
+        <!-- Romantic Line -->
+        <p class="hero-tagline reveal delay-4" data-i18n="heroTagline">
+          "Two hearts, one beautiful beginning."
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-actions reveal delay-5">
+          <a href="#events" class="btn-primary">
+            <span data-i18n="heroBtnEvents">View Programmes</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+            </svg>
+          </a>
+          <a href="#wedding" class="btn-outline">
+            <span data-i18n="heroBtnWedding">The Wedding Day</span>
+          </a>
+        </div>
+
+        <!-- Scroll Cue -->
+        <a href="#story" class="hero-scroll-cue reveal delay-5" aria-label="Scroll to Our Story">
+          <svg width="22" height="34" viewBox="0 0 24 36" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="2" y="2" width="20" height="32" rx="10"/>
+            <circle cx="12" cy="10" r="2.5" fill="currentColor"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         2. OUR STORY SECTION
+         ======================================================================== -->
+    <section class="wedding-section story-section" id="story">
+      <div class="section-container narrow">
+        <div class="section-header reveal">
+          <p class="section-eyebrow" data-i18n="storyEyebrow">A Sacred Beginning</p>
+          <h2 class="section-title" data-i18n="storyTitle">Our Story</h2>
+          <div class="royal-section-divider" aria-hidden="true">
+            <img src="assets/illustrations/ornamental-divider-royal.svg" alt="" class="ornamental-divider-img">
+          </div>
+        </div>
+
+        <div class="story-card-wrapper reveal delay-1">
+          <!-- Antique Gold & Maroon Corner Motifs from Card -->
+          <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-left" aria-hidden="true">
+          <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-right" aria-hidden="true">
+          <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner bottom-left" aria-hidden="true">
+          <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner bottom-right" aria-hidden="true">
+
+          <div class="story-envelope-visual">
+            <div class="story-crest">
+              <div class="mandala-medallion-wrapper sm">
+                <img src="assets/illustrations/royal-floral-mandala.png" alt="Himanshu & Anjani Crest" class="story-medallion-crest" aria-hidden="true">
+                <span class="mandala-monogram-text sm" aria-hidden="true"><span class="monogram-initial">H</span><span class="mandala-amp">&</span><span class="monogram-initial">A</span></span>
+              </div>
+            </div>
+
+            <p class="story-main-text" data-i18n-html="storyMainText">
+              "With the blessings of their families,<br>
+              Himanshu and Anjani begin a new chapter together."
+            </p>
+
+            <p class="story-sub-text" data-i18n="storySubText">
+              Two hearts united in love, guided by the warmth, affection, and prayers of everyone they hold dear. We invite you to be part of the moments that will shape a lifetime.
+            </p>
+
+            <div class="story-signature" data-i18n="storySignature">
+              Himanshu & Anjani
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. MANGALIK PROGRAMMES (Wedding Programmes Timeline)
+         ======================================================================== -->
+    <section class="wedding-section programmes-section" id="events">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow" data-i18n="eventsEyebrow">Auspicious Ceremonies</p>
+          <h2 class="section-title" data-i18n="eventsTitle">Wedding Programmes</h2>
+          <div class="royal-section-divider" aria-hidden="true">
+            <img src="assets/illustrations/ornamental-divider-royal.svg" alt="" class="ornamental-divider-img">
+          </div>
+        </div>
+
+        <!-- Invitation Note Card -->
+        <div class="programmes-intro-card reveal delay-1">
+          <p class="programmes-intro-saprem" data-i18n="programmesIntroSaprem">Cordially Invited</p>
+          <p class="programmes-intro-text" data-i18n-html="programmesIntroText">
+            On the joyous and auspicious occasion of the wedding,<br>
+            you and your family are cordially invited<br>
+            to grace the celebrations with your presence.
+          </p>
+        </div>
+
+        <!-- Vertical Timeline Track -->
+        <div class="timeline-track">
+          
+          <!-- Event 1: Hanuman Aradhana -->
+          <div class="timeline-item reveal">
+            <div class="timeline-node" aria-hidden="true">
+              <!-- Sacred Aarti Diya Lamp -->
+              <img src="assets/illustrations/icon-aarti-diya.svg" alt="Aarti Diya" class="timeline-node-icon">
+            </div>
+
+            <div class="timeline-card">
+              <!-- Corner Motifs -->
+              <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-left" aria-hidden="true">
+              <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-right" aria-hidden="true">
+
+              <span class="event-badge" data-i18n="event1Badge">Day 1 · Divine Invocation</span>
+              <h3 class="event-title-main" data-i18n="event1Title">Hanuman Aradhana</h3>
+              <p class="event-title-sub" data-i18n="event1Sub">Sacred Prayer & Blessings</p>
+
+              <div class="event-meta-row">
+                <div class="event-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="3" y="4" width="18" height="18" rx="2"/>
+                    <path d="M16 2v4M8 2v4M3 10h18"/>
+                  </svg>
+                  <span data-i18n="event1Date">28 November 2026</span>
+                </div>
+                <div class="event-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  <span data-i18n="event1Time">10:00 AM</span>
+                </div>
+              </div>
+
+              <button type="button" class="event-cal-btn" data-event="Hanuman Aradhana" data-date="20261128T043000Z">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2"/>
+                  <path d="M16 2v4M8 2v4M3 10h18"/>
+                </svg>
+                <span>Add to Calendar</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Event 2: Puja Matkor -->
+          <div class="timeline-item reveal delay-1">
+            <div class="timeline-node" aria-hidden="true">
+              <!-- Sacred Kalash Pot -->
+              <img src="assets/illustrations/icon-sacred-kalash.svg" alt="Sacred Kalash" class="timeline-node-icon">
+            </div>
+
+            <div class="timeline-card">
+              <!-- Corner Motifs -->
+              <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-left" aria-hidden="true">
+              <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-right" aria-hidden="true">
+
+              <span class="event-badge" data-i18n="event2Badge">Day 1 · Sacred Ritual</span>
+              <h3 class="event-title-main" data-i18n="event2Title">Puja Matkor</h3>
+              <p class="event-title-sub" data-i18n="event2Sub">Traditional Ceremony</p>
+
+              <div class="event-meta-row">
+                <div class="event-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="3" y="4" width="18" height="18" rx="2"/>
+                    <path d="M16 2v4M8 2v4M3 10h18"/>
+                  </svg>
+                  <span data-i18n="event2Date">28 November 2026</span>
+                </div>
+                <div class="event-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  <span data-i18n="event2Time">5:00 PM</span>
+                </div>
+              </div>
+
+              <button type="button" class="event-cal-btn" data-event="Puja Matkor" data-date="20261128T113000Z">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2"/>
+                  <path d="M16 2v4M8 2v4M3 10h18"/>
+                </svg>
+                <span>Add to Calendar</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Event 3: Haldi Ceremony -->
+          <div class="timeline-item reveal delay-2">
+            <div class="timeline-node" aria-hidden="true">
+              <!-- Turmeric Lotus Floral -->
+              <img src="assets/illustrations/icon-haldi-lotus.svg" alt="Haldi Lotus" class="timeline-node-icon">
+            </div>
+
+            <div class="timeline-card">
+              <!-- Corner Motifs -->
+              <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-left" aria-hidden="true">
+              <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-right" aria-hidden="true">
+
+              <span class="event-badge" data-i18n="event3Badge">Day 1 · Auspicious Turmeric Celebration</span>
+              <h3 class="event-title-main" data-i18n="event3Title">Haldi Ceremony</h3>
+              <p class="event-title-sub" data-i18n="event3Sub">Turmeric & Joy</p>
+
+              <div class="event-meta-row">
+                <div class="event-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="3" y="4" width="18" height="18" rx="2"/>
+                    <path d="M16 2v4M8 2v4M3 10h18"/>
+                  </svg>
+                  <span data-i18n="event3Date">28 November 2026</span>
+                </div>
+                <div class="event-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  <span data-i18n="event3Time">8:00 PM</span>
+                </div>
+              </div>
+
+              <button type="button" class="event-cal-btn" data-event="Haldi Ceremony" data-date="20261128T143000Z">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2"/>
+                  <path d="M16 2v4M8 2v4M3 10h18"/>
+                </svg>
+                <span>Add to Calendar</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Event 4: Baarat Departure -->
+          <div class="timeline-item reveal delay-3">
+            <div class="timeline-node" aria-hidden="true">
+              <!-- Ceremonial Baarat Chariot -->
+              <img src="assets/illustrations/icon-baarat-chariot.svg" alt="Baarat Chariot" class="timeline-node-icon">
+            </div>
+
+            <div class="timeline-card">
+              <!-- Corner Motifs -->
+              <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-left" aria-hidden="true">
+              <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-right" aria-hidden="true">
+
+              <span class="event-badge" data-i18n="event4Badge">Day 2 · Grand Procession</span>
+              <h3 class="event-title-main" data-i18n="event4Title">Baarat Departure</h3>
+              <p class="event-title-sub" data-i18n="event4Sub">Wedding Procession</p>
+
+              <div class="event-meta-row">
+                <div class="event-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="3" y="4" width="18" height="18" rx="2"/>
+                    <path d="M16 2v4M8 2v4M3 10h18"/>
+                  </svg>
+                  <span data-i18n="event4Date">29 November 2026</span>
+                </div>
+                <div class="event-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  <span data-i18n="event4Time">5:00 PM</span>
+                </div>
+              </div>
+
+              <!-- Location & Attendance Notice -->
+              <div class="baarat-notice-box">
+                <p class="baarat-location-title" data-i18n="baaratLocationTitle">Departure Venue:</p>
+                <p data-i18n="baaratLocationDesc">Bus will depart from residence.</p>
+                <p style="margin-top: 6px; font-weight: 500;" data-i18n="baaratAttendanceNote">
+                  All family members and friends are warmly requested to assemble on time to join the Baarat procession.
+                </p>
+              </div>
+
+              <button type="button" class="event-cal-btn" data-event="Baarat Departure" data-date="20261129T113000Z">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2"/>
+                  <path d="M16 2v4M8 2v4M3 10h18"/>
+                </svg>
+                <span>Add to Calendar</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. COUNTDOWN SECTION
+         ======================================================================== -->
+    <section class="wedding-section countdown-section" id="countdown">
+      <div class="section-container narrow">
+        <div class="countdown-frame reveal">
+          <!-- Antique Gold & Maroon Corner Motifs from Card -->
+          <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-left light" aria-hidden="true">
+          <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-right light" aria-hidden="true">
+          <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner bottom-left light" aria-hidden="true">
+          <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner bottom-right light" aria-hidden="true">
+
+          <p class="countdown-eyebrow" data-i18n="countdownEyebrow">Countdown to the Sacred Vows</p>
+          <h2 class="countdown-target-date" data-i18n="countdownTarget">30 NOVEMBER 2026</h2>
+
+          <!-- 4 Digit Units -->
+          <div class="countdown-grid">
+            <div class="countdown-box">
+              <span class="countdown-number" id="countDays">00</span>
+              <span class="countdown-unit-label" data-i18n="countdownDays">Days</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-number" id="countHours">00</span>
+              <span class="countdown-unit-label" data-i18n="countdownHours">Hours</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-number" id="countMinutes">00</span>
+              <span class="countdown-unit-label" data-i18n="countdownMinutes">Minutes</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-number" id="countSeconds">00</span>
+              <span class="countdown-unit-label" data-i18n="countdownSeconds">Seconds</span>
+            </div>
+          </div>
+
+          <p class="countdown-romantic-note" data-i18n="countdownNote">
+            Counting every sacred moment until the auspicious wedding celebration.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. WEDDING DAY DEDICATED SECTION
+         ======================================================================== -->
+    <section class="wedding-section wedding-day-section" id="wedding">
+      <div class="section-container narrow">
+        <div class="wedding-day-card reveal">
+          <!-- Antique Gold & Maroon Corner Motifs from Card -->
+          <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-left" aria-hidden="true">
+          <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-right" aria-hidden="true">
+          <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner bottom-left" aria-hidden="true">
+          <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner bottom-right" aria-hidden="true">
+          
+          <!-- Elegant Royal Mughal Mandap Gateway (Uploaded Luxury Illustration) -->
+          <div class="wedding-day-mandap-art">
+            <img src="assets/illustrations/royal-mandap-gateway.png" alt="Sacred Mandap Gateway" class="wedding-mandap-gateway-img">
+          </div>
+
+          <p class="wedding-day-header-badge" data-i18n="weddingEyebrow">The Wedding Ceremony</p>
+          <h2 class="wedding-day-date-large" data-i18n="weddingDateMain">30 NOVEMBER 2026</h2>
+          <p class="wedding-day-date-hindi" data-i18n="weddingDateSub">Monday · Auspicious Wedding Ceremony</p>
+
+          <div class="wedding-day-separator">
+            <img src="assets/illustrations/ornamental-divider-royal.svg" alt="" class="wedding-day-divider-img" aria-hidden="true">
+          </div>
+
+          <div class="wedding-day-elephants-row">
+            <img src="assets/illustrations/royal-ceremonial-elephant-right.png" alt="Royal Ceremonial Elephant Left" class="wedding-day-elephant left" aria-hidden="true">
+            <div class="wedding-day-couple-names">
+              <h3 class="wedding-day-person" data-i18n="weddingGroom">Himanshu Sharma</h3>
+              <div class="wedding-day-weds" data-i18n="weddingWeds">Weds</div>
+              <h3 class="wedding-day-person" data-i18n="weddingBride">Anjani Sharma</h3>
+            </div>
+            <img src="assets/illustrations/royal-ceremonial-elephant-left.png" alt="Royal Ceremonial Elephant Right" class="wedding-day-elephant right" aria-hidden="true">
+          </div>
+
+          <!-- Respectful Venue Note (no invented details) -->
+          <div class="wedding-day-venue-note" data-i18n="weddingVenueNote">
+            Auspicious Wedding Ceremony · Venue details and ceremony timings will be communicated soon.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. FAMILY SECTION (With Best Compliments & Blessings)
+         ======================================================================== -->
+    <section class="wedding-section family-section" id="family">
+      <div class="section-container narrow">
+        <div class="family-card reveal">
+          <!-- Antique Gold & Maroon Corner Motifs from Card -->
+          <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-left" aria-hidden="true">
+          <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-right" aria-hidden="true">
+          <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner bottom-left" aria-hidden="true">
+          <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner bottom-right" aria-hidden="true">
+          
+          <!-- Royal Family Crest (Floral Mandala Medallion) -->
+          <div class="family-crest-icon">
+            <div class="mandala-medallion-wrapper sm">
+              <img src="assets/illustrations/royal-floral-mandala.png" alt="Sharma Family Crest" class="family-crest-medallion" aria-hidden="true">
+              <span class="mandala-monogram-text sm" aria-hidden="true">शुभ</span>
+            </div>
+          </div>
+
+          <h2 class="family-title-main" data-i18n="familyTitle">With Best Compliments & Blessings</h2>
+          <p class="family-subtitle" data-i18n="familySubtitle">With deepest affection and warm wishes from our beloved elders & family</p>
+
+          <ul class="family-names-list">
+            <li class="family-member-item" data-i18n="familyMember1">Mr. Shambhu Sharma & Mrs. Sunita Sharma</li>
+            <div class="family-divider-dot"></div>
+
+            <li class="family-member-item" data-i18n="familyMember2">Mr. Vishwanath Sharma</li>
+            <div class="family-divider-dot"></div>
+
+            <li class="family-member-item" data-i18n="familyMember3">Mrs. Meena Devi</li>
+            <div class="family-divider-dot"></div>
+
+            <li class="family-member-item" data-i18n="familyMember4">Mr. Omprakash Sharma</li>
+            <div class="family-divider-dot"></div>
+
+            <li class="family-member-item" data-i18n="familyMember5">Mrs. Babita Devi</li>
+            <div class="family-divider-dot"></div>
+
+            <li class="family-member-item" data-i18n="familyMember6">Aditya Sharma, Kirti Sharma</li>
+            <div class="family-divider-dot"></div>
+
+            <li class="family-member-item" data-i18n="familyMember7">Sanjay Sharma & Subhash Sharma</li>
+            <div class="family-divider-dot"></div>
+
+            <li class="family-member-item family-final-line" data-i18n="familyMember8">All Members of the Sharma Family</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. FINAL INVITATION & EMOTIONAL CLOSING
+         ======================================================================== -->
+    <section class="closing-section" id="closing">
+      <div class="closing-bg-glow" aria-hidden="true"></div>
+
+      <div class="section-container narrow">
+        <div class="reveal">
+          <p class="closing-blessing-text" data-i18n-html="closingBlessing">
+            We warmly request the honor of your presence and blessings with your family<br>
+            to grace these auspicious occasions.
+          </p>
+
+          <div class="closing-monogram">
+            <div class="mandala-medallion-wrapper">
+              <img src="assets/illustrations/royal-floral-mandala.png" alt="Himanshu & Anjani Crest" class="closing-crest-img" aria-hidden="true">
+              <span class="mandala-monogram-text light" aria-hidden="true"><span class="monogram-initial">H</span><span class="mandala-amp">&</span><span class="monogram-initial">A</span></span>
+            </div>
+          </div>
+
+          <h2 class="closing-names" data-i18n="closingNames">HIMANSHU & ANJANI</h2>
+          <p class="closing-date" data-i18n="closingDate">30 NOVEMBER 2026</p>
+
+          <!-- Symmetrical Closing Elephants -->
+          <div class="closing-elephants-row" aria-hidden="true">
+            <img src="assets/illustrations/royal-ceremonial-elephant-right.png" alt="" class="closing-elephant left">
+            <img src="assets/illustrations/royal-ceremonial-elephant-left.png" alt="" class="closing-elephant right">
+          </div>
+
+          <p class="closing-emotional-line" data-i18n="closingEmotionalLine">
+            "With love, we invite you to celebrate with us."
+          </p>
+
+          <!-- Royal Ornamental Divider -->
+          <div class="royal-section-divider closing-divider" aria-hidden="true">
+            <img src="assets/illustrations/ornamental-divider-royal.svg" alt="" class="ornamental-divider-img light">
+          </div>
+
+          <!-- Interactive Action Buttons -->
+          <div class="closing-actions">
+            <!-- WhatsApp Share Button -->
+            <button type="button" class="btn-whatsapp-share" id="whatsappShareBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 2C6.516 2 2.02 6.49 2.02 12C2.02 13.97 2.59 15.82 3.65 17.38L2 22L6.78 20.47C8.32 21.44 10.13 22 12.03 22C17.545 22 22.04 17.51 22.04 12C22.04 6.49 17.545 2 12.031 2ZM12.03 20.25C10.37 20.25 8.78 19.78 7.42 18.94L7.1 18.75L4.27 19.65L5.19 16.89L4.98 16.55C4.06 15.09 3.58 13.56 3.58 12C3.58 7.35 7.37 3.56 12.03 3.56C16.69 3.56 20.48 7.35 20.48 12C20.48 16.65 16.69 20.25 12.03 20.25ZM16.64 14.5C16.39 14.37 15.13 13.75 14.9 13.66C14.66 13.57 14.49 13.53 14.32 13.78C14.15 14.03 13.67 14.6 13.52 14.77C13.38 14.94 13.23 14.96 12.98 14.83C12.73 14.7 11.93 14.44 10.98 13.59C10.24 12.93 9.74 12.11 9.6 11.86C9.45 11.61 9.58 11.48 9.71 11.35C9.82 11.24 9.96 11.06 10.09 10.91C10.21 10.76 10.26 10.65 10.34 10.49C10.42 10.32 10.38 10.18 10.32 10.05C10.26 9.93 9.76 8.7 9.56 8.19C9.36 7.69 9.15 7.76 9 7.75C8.86 7.75 8.7 7.75 8.53 7.75C8.36 7.75 8.09 7.81 7.86 8.06C7.63 8.31 7 8.9 7 10.1C7 11.3 7.88 12.46 8 12.63C8.13 12.79 9.73 15.26 12.18 16.32C12.76 16.57 13.22 16.72 13.57 16.83C14.16 17.02 14.7 16.99 15.12 16.93C15.6 16.86 16.59 16.33 16.8 15.75C17.01 15.16 17.01 14.66 16.95 14.56C16.88 14.46 16.72 14.4 16.47 14.28L16.64 14.5Z"/>
+              </svg>
+              <span data-i18n="btnWhatsapp">Share on WhatsApp</span>
+            </button>
+            
+            <!-- Add to Calendar Button -->
+            <button type="button" class="btn-calendar-add" id="addToCalendarBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                <path d="M16 2v4M8 2v4M3 10h18"/>
+                <path d="M12 14v4M10 16h4"/>
+              </svg>
+              <span data-i18n="btnCalendar">Save Date (.ICS)</span>
+            </button>
+
+            <!-- Guest Wishes Button -->
+            <button type="button" class="btn-wishes-modal" id="openWishesModalBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+              <span data-i18n="btnWishes">Send Blessings</span>
+            </button>
+          </div>
+
+          <div class="closing-footer-note" data-i18n="footerNote">
+            Himanshu & Anjani · 30 November 2026 · With Love & Gratitude
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  </div> <!-- /.wedding-website-wrapper -->
+
+  <!-- ========================================================================
+       BLESSINGS / GUEST WISHES MODAL
+       ======================================================================== -->
+  <div class="modal-backdrop" id="wishesModalBackdrop" role="dialog" aria-modal="true" aria-label="Send Wishes & Blessings">
+    <div class="wishes-modal-box">
+      <!-- Antique Gold & Maroon Corner Motifs from Card -->
+      <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-left" aria-hidden="true">
+      <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner top-right" aria-hidden="true">
+      <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner bottom-left" aria-hidden="true">
+      <img src="assets/illustrations/card-corner-motif.svg" alt="" class="card-corner bottom-right" aria-hidden="true">
+
+      <button type="button" class="modal-close-btn" id="closeWishesModalBtn" aria-label="Close dialog">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <h3 class="modal-title" data-i18n="modalTitle">Send Your Blessings</h3>
+      <p class="modal-subtitle" data-i18n="modalSubtitle">Share your warm wishes and love for Himanshu & Anjani</p>
+
+      <form class="wishes-form" id="wishesForm">
+        <div class="form-field">
+          <label for="guestName" class="form-label" data-i18n="formNameLabel">Your Name</label>
+          <input type="text" id="guestName" class="form-input" placeholder="e.g. Sharma Family" required>
+        </div>
+
+        <div class="form-field">
+          <label for="guestMessage" class="form-label" data-i18n="formMessageLabel">Your Blessings / Message</label>
+          <textarea id="guestMessage" class="form-textarea" placeholder="May your lives together be blessed with endless happiness..." required></textarea>
+        </div>
+
+        <button type="submit" class="form-submit-btn" data-i18n="formSubmit">Send Blessings to Couple</button>
+      </form>
+
+      <div class="wishes-success-message" id="wishesSuccessMessage">
+        <div class="wishes-success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M8 12l3 3 5-5"/>
+          </svg>
+        </div>
+        <h4 style="font-family: var(--font-serif); color: var(--maroon-card); margin-bottom: 6px;" data-i18n="modalSuccessTitle">Blessings Received!</h4>
+        <p style="font-size: 0.9rem; color: var(--charcoal-muted);" data-i18n="modalSuccessText">Thank you for blessing Himanshu & Anjani with your heartfelt love.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

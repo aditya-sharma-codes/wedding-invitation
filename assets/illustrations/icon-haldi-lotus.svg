@@ -1,0 +1,31 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="turmericGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="70%" stop-color="#E5A712"/>
+      <stop offset="100%" stop-color="#B27B08"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Turmeric Radiance Aura -->
+  <circle cx="24" cy="24" r="16" fill="url(#turmericGlow)" opacity="0.25"/>
+
+  <!-- Outer Lotus Petals (Warm Turmeric Gold) -->
+  <path d="M24 10 C18 16 12 24 16 32 C20 32 23 26 24 20 Z" fill="#E5A712" stroke="#B27B08" stroke-width="0.8"/>
+  <path d="M24 10 C30 16 36 24 32 32 C28 32 25 26 24 20 Z" fill="#E5A712" stroke="#B27B08" stroke-width="0.8"/>
+
+  <!-- Side Petals (Auspicious Haldi / Marigold) -->
+  <path d="M12 24 C10 28 14 34 20 34 C20 30 16 26 12 24 Z" fill="#F5B82E"/>
+  <path d="M36 24 C38 28 34 34 28 34 C28 30 32 26 36 24 Z" fill="#F5B82E"/>
+
+  <!-- Center Blooming Petal -->
+  <path d="M24 6 C20 12 18 22 24 28 C30 22 28 12 24 6 Z" fill="#FFE066" stroke="#C59A4E" stroke-width="0.8"/>
+  <circle cx="24" cy="18" r="2" fill="#7A1A24"/>
+
+  <!-- Lotus Water Lily Pad / Green Base -->
+  <path d="M10 36 C16 34 32 34 38 36 C34 38 14 38 10 36 Z" fill="#4A583A"/>
+  <!-- Turmeric Droplets (Auspicious Haldi Shagun) -->
+  <circle cx="24" cy="38" r="2.5" fill="#E5A712" stroke="#B27B08" stroke-width="0.6"/>
+  <circle cx="18" cy="40" r="1.5" fill="#E5A712"/>
+  <circle cx="30" cy="40" r="1.5" fill="#E5A712"/>
+</svg>

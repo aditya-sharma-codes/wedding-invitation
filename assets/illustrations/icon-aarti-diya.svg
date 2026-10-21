@@ -1,0 +1,31 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="flameGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#FFE885"/>
+      <stop offset="50%" stop-color="#FFA033"/>
+      <stop offset="100%" stop-color="#7A1A24" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brassLamp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E4B8"/>
+      <stop offset="50%" stop-color="#C59A4E"/>
+      <stop offset="100%" stop-color="#8B6925"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Radiant Aura -->
+  <circle cx="24" cy="18" r="14" fill="url(#flameGlow)" opacity="0.65"/>
+
+  <!-- Flame Core -->
+  <path d="M24 6 C24 6 18 14 18 20 C18 23.3 20.7 26 24 26 C27.3 26 30 23.3 30 20 C30 14 24 6 24 6 Z" fill="#FFA500"/>
+  <path d="M24 10 C24 10 20 16 20 20 C20 22.2 21.8 24 24 24 C26.2 24 28 22.2 28 20 C28 16 24 10 24 10 Z" fill="#FFF2B2"/>
+
+  <!-- Brass Diya Oil Basin -->
+  <path d="M8 26 C8 26 12 36 24 36 C36 36 40 26 40 26 H8 Z" fill="url(#brassLamp)" stroke="#8B6925" stroke-width="1.2"/>
+  <path d="M6 26 H42 V28 H6 Z" fill="#E8D39E"/>
+  <circle cx="24" cy="27" r="1.5" fill="#7A1A24"/>
+
+  <!-- Diya Pedestal Base -->
+  <path d="M20 36 V40 H28 V36" fill="url(#brassLamp)"/>
+  <path d="M14 40 H34 V43 C34 43 30 44 24 44 C18 44 14 43 14 43 V40 Z" fill="url(#brassLamp)" stroke="#8B6925" stroke-width="0.8"/>
+  <circle cx="24" cy="42" r="1" fill="#7A1A24"/>
+</svg>
